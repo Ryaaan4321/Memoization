@@ -8,9 +8,9 @@ export interface UserData {
     password: string;
 }
 
-export async function createuser({username,email,password}:UserData){
-    const response=await client.user.create({
-        data:{
+export async function createuser({ username, email, password }: UserData) {
+    const response = await client.user.create({
+        data: {
             username,
             email,
             password
